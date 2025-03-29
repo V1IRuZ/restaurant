@@ -1,0 +1,117 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+:root {
+    --system-ui: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --beige: #F5F5DC;
+    --orange: #C65D35;
+    --brown: #654321;
+    --red: #9E2A2B;
+    --yellow: #FFD27F;
+    --green: #A4C639;
+
+}
+
+body {
+    font-family: var(--system-ui);
+    background-color: var(--beige);
+}
+
+header {
+    padding: 2em;
+    background-color: var(--red);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 0 auto;
+    width: clamp(700px, 75%, 1440px);
+    padding: 2em;
+    align-items: center;
+}
+
+/* Home */
+
+/* Intro */
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 2em
+}
+
+#content h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+p.text {
+    font-size: 2rem;
+    color: var(--brown);
+}
+
+.intro img {
+    height: 300px;
+}
+
+/* Open hours */
+
+.open {
+    justify-items: center;
+    padding: 1.5em;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+}
+
+.open h2 {
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+.open ul li {
+    list-style: none;
+    color: var(--brown);
+    font-weight: 900;
+    font-size: 1.5rem;
+}

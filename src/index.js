@@ -1,1 +1,4 @@
-console.log("Page is working!")
+import { pageLoad } from "./home";
+import "./styles.css";
+
+pageLoad();
