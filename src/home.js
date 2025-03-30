@@ -7,19 +7,28 @@ export function homeLoad () {
     // Introduction section
     const image = document.createElement("img");
     image.src = waiterImage;
+    image.alt = "Waiter";
 
     const introduction = document.createElement("div");
     introduction.classList.add("intro");
 
     const homeHeader = document.createElement("h1");
-    homeHeader.textContent = "Welcome to Restaurant";
+    homeHeader.textContent = "Welcome to Rustic Bliss!";
+
+    const introDiv = document.createElement("div");
+    introDiv.classList.add("text");
     
-    const introText = document.createElement("p");
-    introText.classList.add("text");
-    introText.textContent = "Step into a world of flavors where every dish tells a story. Our restaurant combines fresh, locally-sourced ingredients with culinary artistry to create unforgettable dining experiences. Whether you're here for a casual meal or a special celebration, our warm ambiance and attentive service will make you feel right at home. From mouthwatering appetizers to decadent desserts, there's something on our menu to delight every palate. We invite you to relax, savor, and enjoy your time with us. Bon appétit!"
+    const introTextPart1 = document.createElement("p");
+    introTextPart1.textContent = "Step into a world of flavors where every dish tells a story. Our restaurant combines fresh, locally-sourced ingredients with culinary artistry to create unforgettable dining experiences. Whether you're here for a casual meal or a special celebration, our warm ambiance and attentive service will make you feel right at home. From mouthwatering appetizers to decadent desserts, there's something on our menu to delight every palate."
+
+    const introTextPart2 = document.createElement("p");
+    introTextPart2.textContent = " We invite you to relax, savor, and enjoy your time with us. Bon appétit!"
+
+    introDiv.appendChild(introTextPart1);
+    introDiv.appendChild(introTextPart2);
 
     introduction.appendChild(image);
-    introduction.appendChild(introText);
+    introduction.appendChild(introDiv);
 
     // Opening hours section
     const openHours = document.createElement("div");
