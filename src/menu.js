@@ -14,7 +14,7 @@ export function menuLoad() {
             const foodPrice = document.createElement("p");
     
             foodName.textContent = `${item.food}`;
-            foodPrice.textContent = `Price: ${item.price}`;
+            foodPrice.textContent = `${item.price}`;
     
             itemLi.appendChild(foodName);
             itemLi.appendChild(foodPrice);

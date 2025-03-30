@@ -56,10 +56,24 @@ body {
     background-color: var(--beige);
 }
 
+/* Header---------------------------------------------------------- */
+
 header {
     padding: 2em;
     background-color: var(--red);
 }
+
+header button {
+  padding: 0.5em 1em;
+  font-size: 2rem;
+  outline: none;
+  color: var(--yellow);
+  background-color: var(--red);
+  border-style: none;
+  cursor: pointer;
+}
+
+/* Content div------------------------------------------------------- */
 
 #content {
     display: flex;
@@ -130,8 +144,6 @@ header {
 }
 
 .menu div {
-  border: 2px solid var(--orange);
-  border-radius: 10px;
   padding: 1em;
 }
 
@@ -151,6 +163,10 @@ header {
   color: var(--brown);
   font-size: 1.5rem;
   font-weight: 900;
+}
+
+.menu li > p + p {
+  color: var(--red);
 }
 /* Starters section */
 
