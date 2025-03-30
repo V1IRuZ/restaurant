@@ -1,6 +1,6 @@
 import waiterImage from "./waiter.png";
 
-export function pageLoad () {
+export function homeLoad () {
 
     const content = document.querySelector("#content");
 
@@ -26,7 +26,7 @@ export function pageLoad () {
     openHours.classList.add("open");
 
     const h2 = document.createElement("h2");
-    h2.textContent = "Open"
+    h2.textContent = "Open hours"
 
     openHours.appendChild(h2);
 
@@ -41,9 +41,6 @@ export function pageLoad () {
     })
 
     openHours.appendChild(ul);
-
-
-
 
     content.appendChild(homeHeader);
     content.appendChild(introduction);
