@@ -170,7 +170,31 @@ header button {
 .menu li > p + p {
   color: var(--red);
 }
-/* Starters section */
-
 
 /* Contact-------------------------------------------------------- */
+
+.contact-staff {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.contact-staff > div {
+  padding: 1em;
+  border: 2px solid var(--orange);
+  border-radius: 30px;
+}
+
+.contact-staff > div h2 {
+  color: var(--orange);
+}
+
+.contact-staff ul {
+  padding: 0;
+}
+
+.contact-staff > div p {
+  font-size: 1.2rem;
+  color: var(--brown);
+}
