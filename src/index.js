@@ -1,6 +1,6 @@
 import { homeLoad } from "./home";
 import { menuLoad } from "./menu";
-import { aboutLoad } from "./about";
+import { contactLoad } from "./contact";
 import "./styles.css";
 
 homeLoad();
@@ -25,8 +25,8 @@ pages.forEach(page => {
             case "menu":
                 menuLoad();
                 break;
-            case "about":
-                aboutLoad();
+            case "contact":
+                contactLoad();
                 break;
             default:
                 homeLoad();

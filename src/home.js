@@ -13,7 +13,7 @@ export function homeLoad () {
     introduction.classList.add("intro");
 
     const homeHeader = document.createElement("h1");
-    homeHeader.textContent = "Welcome to Rustic Bliss!";
+    homeHeader.textContent = "Welcome to Ember & Feast!";
 
     const introDiv = document.createElement("div");
     introDiv.classList.add("text");

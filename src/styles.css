@@ -95,7 +95,8 @@ header button {
 .intro {
   display: flex;
   align-items: center;
-  gap: 2em
+  gap: 2em;
+  padding: 1.25em;
 }
 
 #content h1 {
@@ -145,6 +146,7 @@ header button {
 
 .menu div {
   padding: 1em;
+  border-top: 5px solid var(--yellow);
 }
 
 .menu h2 {
@@ -171,4 +173,4 @@ header button {
 /* Starters section */
 
 
-/* About---------------------------------------------------------- */
+/* Contact-------------------------------------------------------- */
