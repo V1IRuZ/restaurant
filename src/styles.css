@@ -198,3 +198,19 @@ header button {
   font-size: 1.2rem;
   color: var(--brown);
 }
+
+.location {
+  border: 2px solid var(--orange);
+  border-radius: 30px;
+  padding: 1em;
+}
+
+.location h2 {
+  color: var(--orange);
+  font-size: 2rem;
+}
+
+.location p {
+  color: var(--brown);
+  font-size: 1.5rem;
+}
