@@ -1,4 +1,4 @@
-import waiterImage from "./waiter.png";
+import waiterImage from "./images/waiter.png";
 
 export function homeLoad () {
 
