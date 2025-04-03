@@ -97,6 +97,7 @@ header button {
   align-items: center;
   gap: 2em;
   padding: 1.25em;
+  margin-bottom: 2em;
 }
 
 #content h1 {
@@ -119,11 +120,16 @@ header button {
 
 /* Open hours */
 
+.opening-hours {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .open {
   justify-items: center;
   padding: 1.5em;
-  border: 2px solid var(--orange);
-  border-radius: 10px;
+  /* border: 2px solid var(--orange);
+  border-radius: 10px; */
 }
 
 .open h2 {

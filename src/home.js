@@ -1,4 +1,5 @@
 import waiterImage from "./images/waiter.png";
+import steakImage from "./images/steak.jpg";
 
 export function homeLoad () {
 
@@ -31,6 +32,9 @@ export function homeLoad () {
     introduction.appendChild(introDiv);
 
     // Opening hours section
+    const openingHoursDiv = document.createElement("div");
+    openingHoursDiv.classList.add("opening-hours");
+
     const openHours = document.createElement("div");
     openHours.classList.add("open");
 
@@ -50,9 +54,16 @@ export function homeLoad () {
     })
 
     openHours.appendChild(ul);
+    openingHoursDiv.appendChild(openHours);
+
+    const steak = document.createElement("img");
+    steak.src = steakImage;
+    steak.alt = "Steak";
+
+    openingHoursDiv.appendChild(steak);
 
     content.appendChild(homeHeader);
     content.appendChild(introduction);
-    content.appendChild(openHours);
+    content.appendChild(openingHoursDiv);
 }
 
