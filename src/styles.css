@@ -61,6 +61,8 @@ body {
 header {
     padding: 2em;
     background-color: var(--red);
+    border-bottom: 5px solid var(--yellow);
+    min-width: 900px;
 }
 
 header button {
@@ -71,6 +73,17 @@ header button {
   background-color: var(--red);
   border-style: none;
   cursor: pointer;
+  border: 2px solid var(--red);
+  border-radius: 30px;
+  margin: 0 1em;
+}
+
+header nav {
+  justify-self: center;
+}
+
+header button:hover {
+  border: 2px solid var(--yellow);
 }
 
 /* Content div------------------------------------------------------- */
@@ -80,7 +93,7 @@ header button {
     flex-direction: column;
     gap: 2em;
     margin: 0 auto;
-    width: clamp(700px, 75%, 1440px);
+    width: clamp(900px, 75%, 1440px);
     padding: 2em;
     align-items: center;
 }
@@ -203,6 +216,13 @@ header button {
 
 /* Contact-------------------------------------------------------- */
 
+.contact {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2em;
+  justify-items: center;
+}
+
 .contact-staff {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -216,7 +236,8 @@ header button {
   border-radius: 30px;
 }
 
-.contact-staff > div h2 {
+.contact-staff h2,
+.contact-info h2 {
   color: var(--orange);
 }
 
@@ -228,3 +249,27 @@ header button {
   font-size: 1.2rem;
   color: var(--brown);
 }
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 2em;
+  padding: 1em;
+  justify-items: center;
+  align-content: center;
+}
+
+.contact-info img {
+  border-radius: 30px;
+}
+
+.contact-info > div {
+  padding: 1em;
+}
+
+.contact-info p {
+  color: var(--brown);
+  font-size: 1.2rem;
+}
+
+

@@ -45,7 +45,7 @@ const schedule = document.createElement("div");
 schedule.classList.add("schedule");
 
 const scheduleH2 = document.createElement("h2");
-scheduleH2.textContent = "Open hours"
+scheduleH2.textContent = "We are open:"
 
 schedule.appendChild(scheduleH2);
 
