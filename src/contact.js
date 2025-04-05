@@ -60,20 +60,19 @@ export function contactLoad() {
     createStaffDiv(waiter3);
     createStaffDiv(manager);
 
-    const location = document.createElement("div");
-    location.classList.add("location");
+    // const location = document.createElement("div");
+    // location.classList.add("location");
 
-    const locationH2 = document.createElement("h2");
-    locationH2.textContent = "Location";
+    // const locationH2 = document.createElement("h2");
+    // locationH2.textContent = "Location";
 
-    location.appendChild(locationH2);
+    // location.appendChild(locationH2);
 
-    const address = document.createElement("p");
-    address.textContent = "Emberstreet 45, Helsinki, Finland";
-    location.appendChild(address);
+    // const address = document.createElement("p");
+    // address.textContent = "Emberstreet 45, Helsinki, Finland";
+    // location.appendChild(address);
 
 
 
     content.appendChild(contact);
-    content.appendChild(location);
 }

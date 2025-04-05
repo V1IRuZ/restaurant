@@ -93,9 +93,9 @@ header button {
 
 /* Intro */
 .intro {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   align-items: center;
-  gap: 2em;
   padding: 1.25em;
   margin-bottom: 2em;
 }
@@ -110,37 +110,61 @@ header button {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--brown);
 }
 
 .intro img {
-  height: 300px;
+  height: 250px;
 }
 
-/* Open hours */
+/* Info */
 
-.opening-hours {
+.info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2em;
 }
 
-.open {
+.info img {
+  border-radius: 30px;
+}
+
+.schedule {
   justify-items: center;
+  align-content: center;
   padding: 1.5em;
-  /* border: 2px solid var(--orange);
-  border-radius: 10px; */
 }
 
-.open h2 {
+.schedule h2,
+.location h2 {
   color: var(--orange);
   font-size: 2rem;
+  padding: 0.5em;
 }
 
-.open ul li {
+.schedule ul {
+  padding: 0;
+}
+
+.schedule ul li {
   color: var(--brown);
   font-weight: 900;
   font-size: 1.5rem;
+  padding: 0.25em;
+  text-align: center;
+}
+
+.location {
+  justify-items: center;
+  align-content: center;
+}
+
+.location p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--brown);
 }
 
 /* Menu---------------------------------------------------------- */
@@ -203,20 +227,4 @@ header button {
 .contact-staff > div p {
   font-size: 1.2rem;
   color: var(--brown);
-}
-
-.location {
-  border: 2px solid var(--orange);
-  border-radius: 30px;
-  padding: 1em;
-}
-
-.location h2 {
-  color: var(--orange);
-  font-size: 2rem;
-}
-
-.location p {
-  color: var(--brown);
-  font-size: 1.5rem;
 }

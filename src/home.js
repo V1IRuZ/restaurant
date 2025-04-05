@@ -1,69 +1,100 @@
 import waiterImage from "./images/waiter.png";
 import steakImage from "./images/steak.jpg";
+import restaurantImage from "./images/restaurant.jpg";
+
+
+const content = document.querySelector("#content");
+
+// Home main header
+const homeHeader = document.createElement("h1");
+homeHeader.textContent = "Welcome to Ember & Feast!";
+
+// Introduction 
+const introduction = document.createElement("div");
+introduction.classList.add("intro");
+
+// Introduction > "waiter" image
+const waiter = document.createElement("img");
+waiter.src = waiterImage;
+waiter.alt = "Waiter";
+
+introduction.appendChild(waiter);
+
+// Introduction > text
+
+const introDiv = document.createElement("div");
+introDiv.classList.add("text");
+
+const introTextPart1 = document.createElement("p");
+introTextPart1.textContent = "Step into a world of flavors where every dish tells a story. Our restaurant combines fresh, locally-sourced ingredients with culinary artistry to create unforgettable dining experiences. Whether you're here for a casual meal or a special celebration, our warm ambiance and attentive service will make you feel right at home. From mouthwatering appetizers to decadent desserts, there's something on our menu to delight every palate."
+
+const introTextPart2 = document.createElement("p");
+introTextPart2.textContent = " We invite you to relax, savor, and enjoy your time with us. Bon appétit!"
+
+introDiv.appendChild(introTextPart1);
+introDiv.appendChild(introTextPart2);
+
+introduction.appendChild(introDiv);
+
+// Info 
+const infoDiv = document.createElement("div");
+infoDiv.classList.add("info");
+
+// Info > schedule 
+const schedule = document.createElement("div");
+schedule.classList.add("schedule");
+
+const scheduleH2 = document.createElement("h2");
+scheduleH2.textContent = "Open hours"
+
+schedule.appendChild(scheduleH2);
+
+const scheduleUl = document.createElement("ul");
+
+const weekDays = ["Monday: 10.00 - 22.00", "Tuesday: 10.00 - 22.00", "Wednesday: 10.00 - 22.00", "Thursday: 10.00 - 22.00", "Friday: 14.00 - 0.00", "Saturday: 14.00 - 0.00", "Sunday: CLOSED"]
+
+weekDays.forEach(day => {
+    const scheduleLi = document.createElement("li");
+    scheduleLi.textContent = day;
+    scheduleUl.appendChild(scheduleLi);
+})
+
+schedule.appendChild(scheduleUl);
+infoDiv.appendChild(schedule);
+
+// info > "steak" image
+const steak = document.createElement("img");
+steak.src = steakImage;
+steak.alt = "Steak";
+
+infoDiv.appendChild(steak);
+
+// info > "restaurant" image
+const restaurant = document.createElement("img");
+restaurant.src = restaurantImage;
+restaurant.alt = "Restaurant interior";
+
+infoDiv.appendChild(restaurant);
+
+// info > location
+const location = document.createElement("div");
+location.classList.add("location");
+
+const locationH2 = document.createElement("h2");
+locationH2.textContent = "Location";
+
+location.appendChild(locationH2);
+
+const locationPara = document.createElement("p");
+locationPara.textContent = "Emberstreet 34, Ember City, Emberland";
+
+location.appendChild(locationPara);
+
+infoDiv.appendChild(location)
 
 export function homeLoad () {
-
-    const content = document.querySelector("#content");
-
-    // Introduction section
-    const image = document.createElement("img");
-    image.src = waiterImage;
-    image.alt = "Waiter";
-
-    const introduction = document.createElement("div");
-    introduction.classList.add("intro");
-
-    const homeHeader = document.createElement("h1");
-    homeHeader.textContent = "Welcome to Ember & Feast!";
-
-    const introDiv = document.createElement("div");
-    introDiv.classList.add("text");
-    
-    const introTextPart1 = document.createElement("p");
-    introTextPart1.textContent = "Step into a world of flavors where every dish tells a story. Our restaurant combines fresh, locally-sourced ingredients with culinary artistry to create unforgettable dining experiences. Whether you're here for a casual meal or a special celebration, our warm ambiance and attentive service will make you feel right at home. From mouthwatering appetizers to decadent desserts, there's something on our menu to delight every palate."
-
-    const introTextPart2 = document.createElement("p");
-    introTextPart2.textContent = " We invite you to relax, savor, and enjoy your time with us. Bon appétit!"
-
-    introDiv.appendChild(introTextPart1);
-    introDiv.appendChild(introTextPart2);
-
-    introduction.appendChild(image);
-    introduction.appendChild(introDiv);
-
-    // Opening hours section
-    const openingHoursDiv = document.createElement("div");
-    openingHoursDiv.classList.add("opening-hours");
-
-    const openHours = document.createElement("div");
-    openHours.classList.add("open");
-
-    const h2 = document.createElement("h2");
-    h2.textContent = "Open hours"
-
-    openHours.appendChild(h2);
-
-    const ul = document.createElement("ul");
-
-    const weekDays = ["Monday: 10.00 - 22.00", "Tuesday: 10.00 - 22.00", "Wednesday: 10.00 - 22.00", "Thursday: 10.00 - 22.00", "Friday: 14.00 - 0.00", "Saturday: 14.00 - 0.00", "Sunday: CLOSED"]
-
-    weekDays.forEach(day => {
-        const li = document.createElement("li");
-        li.textContent = day;
-        ul.appendChild(li);
-    })
-
-    openHours.appendChild(ul);
-    openingHoursDiv.appendChild(openHours);
-
-    const steak = document.createElement("img");
-    steak.src = steakImage;
-    steak.alt = "Steak";
-
-    openingHoursDiv.appendChild(steak);
-
     content.appendChild(homeHeader);
     content.appendChild(introduction);
-    content.appendChild(openingHoursDiv);
+    content.appendChild(infoDiv);
 }
 
