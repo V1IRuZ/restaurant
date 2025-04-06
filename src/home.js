@@ -3,7 +3,7 @@ import steakImage from "./images/steak.jpg";
 import restaurantImage from "./images/restaurant.jpg";
 
 
-const content = document.querySelector("#content");
+// const content = document.querySelector("#content");
 
 // Home main header
 const homeHeader = document.createElement("h1");
@@ -92,9 +92,9 @@ location.appendChild(locationPara);
 
 infoDiv.appendChild(location)
 
-export function homeLoad () {
-    content.appendChild(homeHeader);
-    content.appendChild(introduction);
-    content.appendChild(infoDiv);
+export function homeLoad (container) {
+    container.appendChild(homeHeader);
+    container.appendChild(introduction);
+    container.appendChild(infoDiv);
 }
 

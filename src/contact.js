@@ -17,9 +17,6 @@ const waiter2 = new Staff("Sophie", "Waiter", "+358 40 987 65433", "sophie@ember
 const waiter3 = new Staff("Sarah", "Waiter", "+358 40 987 65434", "sarah@emberandfeast.com");
 const manager = new Staff("Mike", "Manager & Owner", "+358 40 987 65435", "mike@emberandfeast.com");
 
-
-const content = document.querySelector("#content");
-
 // Contact main header
 const contactH1 = document.createElement("h1");
 contactH1.textContent = "Our staff";
@@ -97,7 +94,7 @@ contactInfo.appendChild(infoTextDiv);
 
 contactDiv.appendChild(contactInfo);
 
-export function contactLoad() {
-    content.appendChild(contactH1);
-    content.appendChild(contactDiv);
+export function contactLoad(container) {
+    container.appendChild(contactH1);
+    container.appendChild(contactDiv);
 }

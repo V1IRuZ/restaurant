@@ -1,5 +1,3 @@
-const content = document.querySelector("#content");
-
 // Menu main header
 const menuH1 = document.createElement("h1");
 menuH1.textContent = "Menu";
@@ -62,7 +60,7 @@ makeDishList(starters, "Starters");
 makeDishList(mainCourses, "Main Courses");
 makeDishList(desserts, "Desserts")
 
-export function menuLoad() {
-    content.appendChild(menuH1);
-    content.appendChild(menu);
+export function menuLoad(container) {
+    container.appendChild(menuH1);
+    container.appendChild(menu);
 }
