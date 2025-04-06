@@ -56,8 +56,7 @@
     --brown: #654321;
     --red: #9E2A2B;
     --yellow: #FFD27F;
-    --green: #A4C639;
-
+    --yellow-active: hsl(39, 100%, 65%);
 }
 
 body {
@@ -75,21 +74,19 @@ header {
   padding: 2em;
   background-color: var(--red);
   border-bottom: 5px solid var(--yellow);
-  min-width: 900px;
+  min-width: 1060px;
 }
 
 h1.logo {
   flex: 1;
   justify-self: start;
-  font-family: "Blenda Script", var(--system-ui);
   color: var(--yellow);
   text-shadow: 4px 4px var(--orange);
   font-size: 3rem;
 }
 
 header button {
-  font-family: "Blenda Script", var(--system-ui);
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 0.5em 1em;
   font-size: 2rem;
   outline: none;
@@ -104,11 +101,15 @@ header button {
 
 header nav {
   flex: 3;
-  justify-self: center;
 }
 
 header button:hover {
   border: 2px solid var(--yellow);
+}
+
+header button:active {
+  border: 2px solid var(--yellow-active);
+  color: var(--yellow-active);
 }
 
 /* Content div------------------------------------------------------- */
@@ -118,7 +119,7 @@ header button:hover {
   flex-direction: column;
   gap: 2em;
   margin: 0 auto;
-  width: clamp(900px, 75%, 1440px);
+  width: clamp(1060px, 75%, 1440px);
   padding: 2em;
   align-items: center;
 }

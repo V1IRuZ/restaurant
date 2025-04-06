@@ -3,6 +3,7 @@ import { menuLoad } from "./menu";
 import { contactLoad } from "./contact";
 import "./styles.css";
 
+// By default home page content is loaded
 homeLoad();
 
 const mainContent = document.querySelector("#content");
@@ -10,6 +11,7 @@ const pages = document.querySelectorAll("button");
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 
+// Add logo to header
 const logo = document.createElement("h1");
 logo.classList.add("logo");
 logo.textContent = "Ember&Feast";
@@ -22,6 +24,7 @@ function resetDom () {
     }
 }
 
+// First reset content DOM tree then load selected content
 pages.forEach(page => {
     page.addEventListener("click", () => {
         resetDom();
@@ -42,6 +45,7 @@ pages.forEach(page => {
     })
 })
 
+// Add footer
 const footer = document.createElement("footer");
 
 const footerPara = document.createElement("p");

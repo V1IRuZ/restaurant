@@ -10,12 +10,12 @@ class Staff {
 }
 
 // Create staff objects
-const mainChef = new Staff("Jack", "Chef & Owner", "+358 40 987 65430", "jack@emberandfeast.fi");
-const otherChef = new Staff("Julie", "Chef", "+358 40 987 65431", "julie@emberandfeast.fi")
-const waiter1 = new Staff("John", "Chef & Waiter", "+358 40 987 65432", "john@emberandfeast.fi");
-const waiter2 = new Staff("Sophie", "Waiter", "+358 40 987 65433", "sophie@emberandfeast.fi");
-const waiter3 = new Staff("Sarah", "Waiter", "+358 40 987 65434", "sarah@emberandfeast.fi");
-const manager = new Staff("Mike", "Manager & Owner", "+358 40 987 65435", "mike@emberandfeast.fi");
+const mainChef = new Staff("Jack", "Chef & Owner", "+358 40 987 65430", "jack@emberandfeast.com");
+const otherChef = new Staff("Julie", "Chef", "+358 40 987 65431", "julie@emberandfeast.com")
+const waiter1 = new Staff("John", "Chef & Waiter", "+358 40 987 65432", "john@emberandfeast.com");
+const waiter2 = new Staff("Sophie", "Waiter", "+358 40 987 65433", "sophie@emberandfeast.com");
+const waiter3 = new Staff("Sarah", "Waiter", "+358 40 987 65434", "sarah@emberandfeast.com");
+const manager = new Staff("Mike", "Manager & Owner", "+358 40 987 65435", "mike@emberandfeast.com");
 
 
 const content = document.querySelector("#content");
