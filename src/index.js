@@ -49,7 +49,7 @@ pages.forEach(page => {
 const footer = document.createElement("footer");
 
 const footerPara = document.createElement("p");
-footerPara.textContent = "This is not real restaurant";
+footerPara.textContent = "This is not a real restaurant";
 footer.appendChild(footerPara);
 
 document.body.appendChild(footer);

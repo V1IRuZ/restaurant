@@ -79,7 +79,6 @@ header {
 
 h1.logo {
   flex: 1;
-  justify-self: start;
   color: var(--yellow);
   text-shadow: 4px 4px var(--orange);
   font-size: 3rem;
@@ -170,7 +169,8 @@ header button:active {
   border-radius: 30px;
 }
 
-.schedule {
+.schedule,
+.location {
   justify-items: center;
   align-content: center;
   padding: 1.5em;
@@ -193,11 +193,6 @@ header button:active {
   font-size: 1.5rem;
   padding: 0.25em;
   text-align: center;
-}
-
-.location {
-  justify-items: center;
-  align-content: center;
 }
 
 .location p {
