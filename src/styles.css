@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Blenda Script';
+  src: url('./fonts/BlendaScript.woff2') format('woff2'),
+      url('./fonts/BlendaScript.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -52,20 +61,34 @@
 }
 
 body {
-    font-family: var(--system-ui);
+    font-family: "Blenda Script", var(--system-ui);
     background-color: var(--beige);
 }
 
 /* Header---------------------------------------------------------- */
 
 header {
-    padding: 2em;
-    background-color: var(--red);
-    border-bottom: 5px solid var(--yellow);
-    min-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: var(--red);
+  border-bottom: 5px solid var(--yellow);
+  min-width: 900px;
+}
+
+h1.logo {
+  flex: 1;
+  justify-self: start;
+  font-family: "Blenda Script", var(--system-ui);
+  color: var(--yellow);
+  text-shadow: 4px 4px var(--orange);
+  font-size: 3rem;
 }
 
 header button {
+  font-family: "Blenda Script", var(--system-ui);
+  font-size: 2.5rem;
   padding: 0.5em 1em;
   font-size: 2rem;
   outline: none;
@@ -79,6 +102,7 @@ header button {
 }
 
 header nav {
+  flex: 3;
   justify-self: center;
 }
 
@@ -89,13 +113,13 @@ header button:hover {
 /* Content div------------------------------------------------------- */
 
 #content {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    margin: 0 auto;
-    width: clamp(900px, 75%, 1440px);
-    padding: 2em;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 0 auto;
+  width: clamp(900px, 75%, 1440px);
+  padding: 2em;
+  align-items: center;
 }
 
 #content li {

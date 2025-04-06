@@ -7,6 +7,14 @@ homeLoad();
 
 const mainContent = document.querySelector("#content");
 const pages = document.querySelectorAll("button");
+const header = document.querySelector("header");
+const nav = document.querySelector("nav");
+
+const logo = document.createElement("h1");
+logo.classList.add("logo");
+logo.textContent = "Ember&Feast";
+
+header.insertBefore(logo, nav);
 
 function resetDom () {
     while(mainContent.firstChild) {
