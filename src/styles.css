@@ -71,6 +71,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2em;
   padding: 2em;
   background-color: var(--red);
   border-bottom: 5px solid var(--yellow);
@@ -296,4 +297,16 @@ header button:hover {
   font-size: 1.2rem;
 }
 
+/* Footer-------------------------------------------------------- */
 
+footer {
+  background-color: var(--red);
+  border-top: 5px solid var(--yellow);
+}
+
+footer p {
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
